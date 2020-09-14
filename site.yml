@@ -1,0 +1,10 @@
+name: "my-website"
+output_dir: "_site"
+exclude: ["report/*", "*.R"]
+navbar:
+  title: "My Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "資料處理"
+      href: first_v31.html

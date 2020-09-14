@@ -1,0 +1,16 @@
+book_filename: "rmi_class_r"
+language:
+  ui:
+    chapter_name: "Chapter "
+new_session: no
+rmd_files:
+  [
+    "index.Rmd" ,
+    "first_v31.Rmd"
+
+  ]
+#before_chapter_script: "common.R"
+#after_chapter_script: clear_vars_and_pkgs.R
+delete_merged_file: true
+output_dir: "report"
+

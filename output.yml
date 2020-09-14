@@ -1,0 +1,39 @@
+bookdown::gitbook:
+  highlight: haddock # 無作用
+#  css: style.css
+  css: [adv-r.css, tableStyle.css,toc.css]
+  config:
+    toc:
+      before: |
+        <li><a href="./">testing </a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+#      link: http://wwww.x.x/%s
+#      text: "Edit"
+#    download: ["pdf", "epub"]
+    sharing: no
+
+
+bookdown::pdf_book:
+  includes:
+    in_header: header.tex
+    #in_header: [header.tex,latex/preamble.tex ]
+    #before_body: latex/before_body.tex
+    #after_body: latex/after_body.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+  highlight: tango # 無作用
+  # pandoc_args: ["--lua-filter=latex/sidebar.lua"]
+bookdown::epub_book: default
+
+# 原先最簡單的pdf_book設定
+# bookdown::pdf_book:
+#   includes:
+#     in_header: header.tex
+#   latex_engine: xelatex
+#   citation_package: natbib
+#   keep_tex: yes
+#   highlight: tango # 無作用
+
